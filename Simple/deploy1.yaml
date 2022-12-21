@@ -3,7 +3,7 @@ apiVersion: apps/v1
 metadata:
    name: mydemodeployments
 spec:
-   replicas: 3
+   replicas: 5
    selector:      # tells the controller which pods to watch/belong to
     matchLabels:
      name: deploy
