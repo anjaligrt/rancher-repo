@@ -18,7 +18,7 @@ spec:
           image: httpd
           ports:
           - containerPort: 80
-     volumes:
+      volumes:
       - name: my-persistent-storage
         persistentVolumeClaim:
           claimName: my-pv-claim
