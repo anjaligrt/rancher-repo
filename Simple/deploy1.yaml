@@ -15,8 +15,8 @@ spec:
      spec:
       containers:
         - name: c00
-          image: centos
-          command: ["/bin/bash","-c", while true; do echo Hello All; sleep 5; done]
+          image: http
+   #       command: ["/bin/bash","-c", while true; do echo Hello All; sleep 5; done]
           ports:
           - containerPort: 80
 #      volumes:
