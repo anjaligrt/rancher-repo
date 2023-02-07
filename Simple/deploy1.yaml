@@ -19,6 +19,6 @@ spec:
           ports:
           - containerPort: 80
       volumes:
-        - name: my-deploy-vol
-          persistentVolumeClaim:
-            claimName: my-pv-claim
+      - name: my-deploy-vol
+        persistentVolumeClaim:
+          claimName: my-pv-claim
