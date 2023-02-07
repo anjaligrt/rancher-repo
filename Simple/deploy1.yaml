@@ -15,7 +15,6 @@ spec:
      spec:
       containers:
         - name: c00
-          image: http
-   #      command: ["/bin/bash","-c", while true; do echo Hello All; sleep 5; done]
+          image: httpd
           ports:
           - containerPort: 80
