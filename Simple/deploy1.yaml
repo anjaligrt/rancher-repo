@@ -21,4 +21,4 @@ spec:
       volumes:
         - name: my-deploy-vol
           persistentVolumeClaim:
-            claimName: my-deploy-pvc
+            claimName: my-pv-claim
