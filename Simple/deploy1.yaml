@@ -19,7 +19,7 @@ spec:
    #       command: ["/bin/bash","-c", while true; do echo Hello All; sleep 5; done]
           ports:
           - containerPort: 80
-      volumes:
-      - name: my-persistent-storage
-        persistentVolumeClaim:
-          claimName: my-pv-claim
+ #     volumes:
+  #    - name: my-persistent-storage
+  #      persistentVolumeClaim:
+  #        claimName: my-pv-claim
