@@ -1,7 +1,7 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-   name: mydemodeployments
+   name: mydeployments
    namespace: my-unres_psp-ns
 spec:
    replicas: 1
