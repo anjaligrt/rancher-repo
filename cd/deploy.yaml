@@ -2,7 +2,7 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
    name: mydeployments
-   namespace: my-unres_psp-ns
+   namespace: my-unres-psp-ns
 spec:
    replicas: 1
    selector:      # tells the controller which pods to watch/belong to
