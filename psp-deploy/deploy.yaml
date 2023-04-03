@@ -2,6 +2,7 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
    name: mydemodeployments
+   namespace: my-psp-ns
 spec:
    replicas: 3
    selector:      # tells the controller which pods to watch/belong to
@@ -18,7 +19,7 @@ spec:
           image: httpd
           ports:
           - containerPort: 80
-      volumes:
-      - name: my-deploy-vol
+#       volumes:
+#       - name: my-deploy-vol
 #         persistentVolumeClaim:
 #           claimName: my-pv-claim
