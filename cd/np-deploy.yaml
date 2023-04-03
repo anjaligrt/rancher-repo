@@ -2,7 +2,7 @@ kind: Service                             # Defines to create Service type Objec
 apiVersion: v1
 metadata:
   name: myservice
-  namespace: my-res_psp-ns
+  namespace: my-unres_psp-ns
 spec:
   ports:
     - port: 80                               # Containers port exposed
