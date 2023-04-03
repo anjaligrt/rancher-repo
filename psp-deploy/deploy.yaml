@@ -4,7 +4,7 @@ metadata:
    name: mydemodeployments
    namespace: my-psp-ns
 spec:
-   replicas: 3
+   replicas: 1
    selector:      # tells the controller which pods to watch/belong to
     matchLabels:
      name: deploy
@@ -19,7 +19,3 @@ spec:
           image: httpd
           ports:
           - containerPort: 80
-#       volumes:
-#       - name: my-deploy-vol
-#         persistentVolumeClaim:
-#           claimName: my-pv-claim
