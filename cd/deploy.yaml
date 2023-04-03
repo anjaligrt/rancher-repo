@@ -1,17 +1,18 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-   name: mydeployments
+   name: mydemodeployments
+   namespace: my-unres_psp-ns
 spec:
    replicas: 1
    selector:      # tells the controller which pods to watch/belong to
     matchLabels:
-     name: deployment
+     name: deploy
    template:
      metadata:
        name: testpod1
        labels:
-         name: deployment
+         name: deploy
      spec:
       containers:
         - name: c00
