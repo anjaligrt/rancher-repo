@@ -4,7 +4,7 @@ metadata:
    name: mydemodeployments
    namespace: my-psp
 spec:
-   replicas: 1
+   replicas: 2
    selector:      # tells the controller which pods to watch/belong to
     matchLabels:
      name: deploy
