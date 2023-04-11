@@ -2,7 +2,7 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
    name: mydemodeployments
-   namespace: my-psp-ns
+   namespace: demo-namespace
 spec:
    replicas: 2
    selector:      # tells the controller which pods to watch/belong to
