@@ -14,7 +14,7 @@ spec:
        labels:
          name: deploy
      spec:
-      hostNetwork: true
+#       hostNetwork: true
       containers:
         - name: c00
           image: httpd
