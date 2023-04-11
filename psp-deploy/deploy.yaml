@@ -13,8 +13,8 @@ spec:
        name: testpod1
        labels:
          name: deploy
-  # hostNetwork: true
      spec:
+      hostNetwork: true
       containers:
         - name: c00
           image: httpd
